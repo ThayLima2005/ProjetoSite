@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial - scale=1.0">
+    <title>boutique.com</title>
+    <link rel="stylesheet" href="Pagina.css">
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Bem vindo(a) Boutique do Rock</h1>
+        <p>Encontre as melhores roupas com os melhores preços do mercado!</p>
+        
+    </section>
+    <div class="slidesMoletom">
+        <div class="Moletom">
+            <img src="https://opresenteideal.com.br/wp-content/uploads/2020/05/27a103a615.jpg" style="width:100%">
+            <div class="text">Moletom Nirvana</div>
+            <div class="price">R$350</div>
+            <button class="add-to-cart" onclick="addToCart(1, 'Moletom 1', 350)">Adicione no carrinho</button>
+        </div>
+        <div class="Moletom">
+            <img src="https://img.elo7.com.br/product/zoom/471F54F/moletom-linkin-park-rockwear-preto-linkin-park-brazil.jpg" style="width:100%">
+            <div class="text">Moletom Linkin Park</div>
+            <div class="price">R$ 350</div>
+            <button class="add-to-cart" onclick="addToCart(2, 'Moletom 2', 350)">Adicione no carrinho</button>
+        </div>
+        <div class="Moletom">
+            <img src="https://ecsmedia.pl/c/bluza-the-rolling-stones-1978-tour-kangurka-z-kapturem-l-b-iext126699187.jpg" style="width:100%">
+            <div class="text">Moletom Rolling Stones</div>
+            <div class="price">R$300</div>
+            <button class="add-to-cart" onclick="addToCart(3, 'Moletom 3', 300)">Adicione no carrinho</button>
+        </div>
+    
+    <div class="thumbnail-container">
+        <img class="thumbnail" src="https://opresenteideal.com.br/wp-content/uploads/2020/05/27a103a615.jpg" onclick="currentSlide(1)" alt="Moletom 1">
+        <img class="thumbnail" src="https://img.elo7.com.br/product/zoom/471F54F/moletom-linkin-park-rockwear-preto-linkin-park-brazil.jpg" onclick="currentSlide(2)" alt="Moletom 2">
+        <img class="thumbnail" src="https://ecsmedia.pl/c/bluza-the-rolling-stones-1978-tour-kangurka-z-kapturem-l-b-iext126699187.jpg" onclick="currentSlide(3)" alt="Moletom 3">
+
+    <div class="cart-container">
+        <h2>Itens</h2>
+        <p>Itens Adicionados: <span id="cart-count">0</span></p>
+        <div id="cart-items"></div>
+        <p>Total: R$<span id="cart-total">0.00</span></p>
+    </div>
+    <div class="logo">
+        <img src="https://www.pngitem.com/pimgs/m/525-5259174_rolling-stones-sign-hd-png-download.png" alt="log da boutique"style="width: 180px; height: auto;">
+        <script src="Pagina.js"></script>
+
+</body>
+</html>
